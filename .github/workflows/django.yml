@@ -28,3 +28,6 @@ jobs:
     - name: Run Tests
       run: |
         python digital_appointment/manage.py test
+    steps:
+    - name: deploy
+      run: docker-compose.yml up --build
