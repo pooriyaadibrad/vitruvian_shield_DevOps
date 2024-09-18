@@ -47,6 +47,4 @@ jobs:
         python digital_appointment/manage.py test
    
     - name: deploy
-      run: |
-       chmod 644 nginx.conf  
-       docker-compose up --build
+      run: docker-compose up --build
