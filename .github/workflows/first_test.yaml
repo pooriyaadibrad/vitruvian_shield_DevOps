@@ -1,0 +1,13 @@
+name: first_test
+
+
+on:
+  workflow_dispatch
+jobs:
+  print_hello:
+    runs_on:ubuntu-latest
+
+
+      steps:
+      - name: say hello
+      - run: echo "this only test"
